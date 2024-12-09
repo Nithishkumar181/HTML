@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+     <Style>
+        .container img{
+           width: 100%;
+           height: 450px;  
+        }
+        .ul 
+        {
+          text-align: center;
+        }
+        h3{
+            padding-top: 20px ;
+            font-weight: bolder;
+            font-size: 50px;
+        }
+        .margin
+        {
+          padding: 20px 10px;
+          
+        }
+        .master img
+        {
+            width:80%;
+            height:100%;
+            padding:20px;
+            padding-bottom: 20px;;
+        } 
+        .boss
+        {
+       
+          text-align: center;
+        }  
+    
+        </Style>
+</head>
+<body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Shopyfy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxGoDTy04jNhybHZ60w2tOH4h3e74oSJVbLg&s" class="d-block w-100" alt="..." height="500px;" width="300px;">
+          </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/75950f4a-6a25-44be-a932-00f17ad7c0d1._CR0,0,1200,628_SX810_QL70_.jpeg" class="d-block w-100" alt="..." height="500px;" width="300px;">
+          </div>
+          <div class="carousel-item">
+            <img src="data:image/jpeg;base64,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"class="d-block w-100" alt="..."  height="500px;" width="300px;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container  bg-1" id="aboutsec" >
+        <div class="row">
+          <div class="col-5">
+            <img src="https://m.media-amazon.com/images/I/71r0Ysx+oVL._SL1500_.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="margin">
+              <h3 class="card-title">realme NARZO N61</h3>
+              <p class="card-text">
+                realme NARZO N61 (Voyage Blue,4GB RAM+64GB Storage) 90Hz Eye Comfort Display | IP54 Dust & Water Resistance | 48-Month Fluency | Charger in The Box</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <button type="button" class="btn1 btn-success"> See More</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  </div>
+</div>
+    <div class="container  bg-1" id="aboutsec" >
+        <div class="row">
+          <div class="col-5">
+            <img src="https://m.media-amazon.com/images/I/41Qk2Ca0TEL._SX300_SY300_QL70_FMwebp_.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="margin">
+              <h3 class="card-title">Redmi 13 5G</h3>
+              <p class="card-text">
+                Redmi 13 5G, Orchid Pink, 6GB+128GB | India Debut SD 4 Gen 2 AE | 108MP Pro Grade Camera | 6.79in Largest Display in Segment</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <button type="button" class="btn1 btn-success"> See More</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  </div>
+</div>
+<div class="master">
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-pills card-header-pills">
+    </ul>
+  </div>
+  <div class="container my-3">
+  <div class="card-body">
+    <h2 class="card-title"> Offers</h2>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">See More</a>
+  </div>
+</div>
+</div>
+<div class="container my-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/514j-RPeWyL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Godrej AC </h5>
+          <p class="card-text">Godrej 1 Ton 3 Star, 5 Years Comprehensive Warranty, 5-In-1 Convertible Cooling, Inverter Split AC (Copper, I-Sense Technology, 2024 Model, AC 1T EI 12TINV3R32-GWA Split, White)Ton 3 Star, 5 Years Comprehensive Warranty</p>
+           <a href="#" class="btn btn-primary">See more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/618hSd40v6L._SX679_.jpg" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">Panasonic Microwave</h5>
+          <p class="card-text">Panasonic 20 L Solo Microwave Oven (NN-SM25JBFDG,Black, Auto Cook Recipes, Epoxy Gray Cavity Coating)</p>
+          <a href="#" class="btn btn-primary">See more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/41ZM-lZiadL._SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top" alt="Product 3">
+        <div class="card-body">
+          <h5 class="card-title">Android LED TV</h5>
+          <p class="card-text">TCL 79.97 cm (32 inches) Metallic Bezel-Less HD Ready Smart Android LED TV 32L4B (Black)</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card-body">
+  <div class="boss">
+    <h2 class="card-title">Our Products</h2>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  </div>
+</div>
+<div class="container my-5">
+  <h2>Popular Products</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/7134KsVC-BL._SX679_.jpg" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Sofa cover</h5>
+          <p class="card-text">Floral Sofa Cover 5 Seater|Cotton Sofa cover 3 Seater And 2 Seater|Full cover Set For Couch</p>
+          <a href="#" class="btn btn-primary">see more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/51fGcq4f3BL._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">Dining Table Room Chair Covers</h5>
+          <p class="card-text">remium Stretchable Magic Slipcover Stretch Dining Table Room Chair Covers Protector Set of 6 Piece Seater India </p>
+          <a href="#" class="btn btn-primary">see more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/41nOXys1E2L._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="Product 3">
+        <div class="card-body">
+          <h5 class="card-title">Kuber Industries Cotton 5 Seater Sofa Cover</h5>
+          <p class="card-text">Kuber Industries Cotton 5 Seater Sofa Cover|Premium Cotton Fabric & Side </p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container my-5">
+  <h2>Popular Products</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/51d7i7NbDdL._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Kitchen Containers</h5>
+          <p class="card-text">TEX-RO Kitchen Containers Set With Spoons For Storage Organization | Air Tight Plastic Boxes</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/31Ekh-MB+PL._SY300_SX300_.jpg" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">Luminous Inverter & Battery</h5>
+          <p class="card-text">Luminous Inverter & Battery Combo Eco Volt Neo 850 Pure Sine Wave 700VA/12V Inverter with Red Charge RC18000 </p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/31R-uE4sp7L._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="Product 3">
+        <div class="card-body">
+          <h5 class="card-title"> Iron for clothes</h5>
+          <p class="card-text">Orient Electric Fabrijoy 1000 Watt Dry Iron for clothes with Weilburger Non Stick Soleplate coating | 5 level safety|  by Orient</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container my-5">
+  <h2>Contact Us</h2>
+  <form>
+    <div class="mb-3">
+      <input type="text" class="form-control" id="name" placeholder="Your Name">
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" id="email" placeholder="Your Email">
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</body>
+</html>
